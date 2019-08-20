@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="transaction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="retailStoreID" type="xs:unsignedShort" />
+        <xs:element maxOccurs="unbounded" name="transcationdetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="businessDayDate" type="xs:string" />
+              <xs:element name="purchseDetails">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="items">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="amount" type="xs:decimal" />
+                          <xs:element name="itemID" type="xs:unsignedByte" />
+                          <xs:element name="itemName" type="xs:string" />
+                          <xs:element name="quantity" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="totalAmount" type="xs:decimal" />
+                  </xs:sequence>
+                  <xs:attribute name="orderId" type="xs:unsignedByte" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="delivery">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="deliveryStatus" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="value" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="paymentMode" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

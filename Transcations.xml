@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transactions>
+    <transcations>
+        <retailStoreID>405</retailStoreID>
+        <transcationdetails>
+            <businessDayDate>8/12/2019</businessDayDate>
+            <purchseDetails orderId="201">
+                <items>
+                    <amount>100.2</amount>
+                    <itemID>101</itemID>
+                    <itemName>mobile</itemName>
+                    <quantity>1</quantity>
+                </items>
+                <items>
+                    <amount>50.2</amount>
+                    <itemID>102</itemID>
+                    <itemName>book</itemName>
+                    <quantity>2</quantity>
+                </items>
+                <totalAmount>120.2</totalAmount>
+            </purchseDetails>
+            <delivery value="yes">
+                <deliveryStatus>pending</deliveryStatus>
+            </delivery>
+            <paymentMode>card</paymentMode>
+        </transcationdetails>
+        <transcationdetails>
+            <businessDayDate>8/11/2019</businessDayDate>
+            <purchseDetails orderId="202">
+                <items>
+                    <amount>100.2</amount>
+                    <itemID>101</itemID>
+                    <itemName>mobile</itemName>
+                    <quantity>1</quantity>
+                </items>
+                <items>
+                    <amount>50.2</amount>
+                    <itemID>102</itemID>
+                    <itemName>book</itemName>
+                    <quantity>2</quantity>
+                </items>
+                <totalAmount>120.2</totalAmount>
+            </purchseDetails>
+            <delivery value="yes">
+                <deliveryStatus>pending</deliveryStatus>
+            </delivery>
+            <paymentMode>cash</paymentMode>
+        </transcationdetails>
+    </transcations>
+</transactions>
